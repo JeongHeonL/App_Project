@@ -6,7 +6,7 @@
 < UI/UX에서의 목표 > 
 터치 5번이내로 변환 및 다운로드가 가능하게 할 것
 요즘 바뀐 은행ATM UIUX디자인처럼 최대한 직관적으로 디자인할 것
-이 디자인처럼 -> https://outstanding.kr/senioratm20220126
+[이 디자인처럼] (https://outstanding.kr/senioratm20220126)
 
 
 < 프론트에서의 목표 > 
