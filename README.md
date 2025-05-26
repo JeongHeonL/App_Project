@@ -6,6 +6,12 @@
 터치 5번이내로 변환 및 다운로드가 가능하게 할 것<br>
 요즘 바뀐 은행ATM UIUX디자인처럼 최대한 직관적으로 디자인할 것
 #### 이 디자인처럼 
+<details>
+    <summary>이 디자인처럼</summary>
+
+![ux극대화](https://github.com/user-attachments/assets/84d58501-83a4-4f59-8f48-e0fe8e146674)
+
+</details>
 ![ux극대화](https://github.com/user-attachments/assets/84d58501-83a4-4f59-8f48-e0fe8e146674)
 
 
