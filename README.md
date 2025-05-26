@@ -73,8 +73,16 @@ wifi환경에서만 다운로드하게 하는 기능 <br>
 ![마일스톤](https://github.com/user-attachments/assets/00007115-6044-48bb-a420-9e04454b55ea)
 
 </details>
-![마일스톤](https://github.com/user-attachments/assets/00007115-6044-48bb-a420-9e04454b55ea)
 
 #### 현재 나의 간트차트 ( 수정될 수 있음 )
+
+<details>
+    <summary>간트차트</summary>
+
+![간트차트](https://github.com/user-attachments/assets/bf2da737-0a97-4742-8cc3-ef547f670322)
+
+</details>
+
+
 ![간트차트](https://github.com/user-attachments/assets/bf2da737-0a97-4742-8cc3-ef547f670322)
 
