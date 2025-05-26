@@ -67,6 +67,7 @@ wifi환경에서만 다운로드하게 하는 기능 <br>
 
 #### 요구사항 정의서 만들어야 됨 : 나 , 이 앱을 사용하는 이용자 , AI 에서의 ... . 어떻게 만들어야할지 구상해야함
 
+#### 나의 마일스톤
 <details>
     <summary>마일스톤</summary>
 
@@ -75,9 +76,8 @@ wifi환경에서만 다운로드하게 하는 기능 <br>
 </details>
 
 #### 현재 나의 간트차트 ( 수정될 수 있음 )
-
 <details>
-    <summary>####간트차트</summary>
+    <summary>간트차트</summary>
 
 ![간트차트](https://github.com/user-attachments/assets/bf2da737-0a97-4742-8cc3-ef547f670322)
 
