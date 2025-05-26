@@ -5,7 +5,7 @@
 < UI/UX에서의 목표 > <br>
 터치 5번이내로 변환 및 다운로드가 가능하게 할 것<br>
 요즘 바뀐 은행ATM UIUX디자인처럼 최대한 직관적으로 디자인할 것
-####<details>
+<details>
     <summary>이 디자인처럼</summary>
 
 ![ux극대화](https://github.com/user-attachments/assets/84d58501-83a4-4f59-8f48-e0fe8e146674)
@@ -67,7 +67,12 @@ wifi환경에서만 다운로드하게 하는 기능 <br>
 
 #### 요구사항 정의서 만들어야 됨 : 나 , 이 앱을 사용하는 이용자 , AI 에서의 ... . 어떻게 만들어야할지 구상해야함
 
-#### 마일스톤 ↓
+<details>
+    <summary>마일스톤</summary>
+
+![마일스톤](https://github.com/user-attachments/assets/00007115-6044-48bb-a420-9e04454b55ea)
+
+</details>
 ![마일스톤](https://github.com/user-attachments/assets/00007115-6044-48bb-a420-9e04454b55ea)
 
 #### 현재 나의 간트차트 ( 수정될 수 있음 )
