@@ -72,18 +72,6 @@ wifi환경에서만 다운로드하게 하는 기능 <br>
     <summary>마일스톤</summary>
 
 ![마일스톤](https://github.com/user-attachments/assets/00007115-6044-48bb-a420-9e04454b55ea)
-
-</details>
-
-#### 현재 나의 간트차트 ( 수정될 수 있음 )
-<details>
-    <summary>간트차트</summary>
-
-![간트차트](https://github.com/user-attachments/assets/bf2da737-0a97-4742-8cc3-ef547f670322)
-
-</details>
-
-
 | 번호 | 마일스톤 이름            | 설명                                                 | 날짜         |
 | -- | ------------------ |                -------------------------- |                      ---------- |
 | 1  | 프로젝트 계획 및 착수          | 프로젝트 계획                                        | 2025-05-19 |
@@ -94,6 +82,17 @@ wifi환경에서만 다운로드하게 하는 기능 <br>
 | 6  | 앱 기능 테스트                 | 모든 모듈 통합 후 종합 테스트 완료                    | 2025-06-20 |
 | 7  | 최종 점검                      | 사용자 피드백 반영 후 최종 제품 승인                  | 2025-06-22 |
 | 8  | 시스템 정식 개발완료 및 배포    | 운영 서버로의 배포 및 서비스 시작                     | 2025-06-23 |
+
+
+</details>
+
+#### 현재 나의 간트차트 ( 수정될 수 있음 )
+<details>
+    <summary>간트차트</summary>
+
+![간트차트](https://github.com/user-attachments/assets/bf2da737-0a97-4742-8cc3-ef547f670322)
+
+</details>
 
 
 
