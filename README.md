@@ -2,10 +2,9 @@
 #### 영상 음원 문서 파일 등 종합 변환 앱
 
 < UI/UX에서의 목표 > <br>
-터치 5번이내로 변환 및 다운로드가 가능하게 할 것<br>
-요즘 바뀐 은행ATM UIUX디자인처럼 최대한 직관적으로 디자인할 것
+사용자가 적은횟수의 행동으로 변환 및 다운로드가 가능하게 할 것<br>
 <details>
-    <summary>이 디자인처럼</summary>
+    <summary>이 디자인처럼 간결하고 비슷하게</summary>
 
 ![ux극대화](https://github.com/user-attachments/assets/84d58501-83a4-4f59-8f48-e0fe8e146674)
 
