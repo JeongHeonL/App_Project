@@ -130,7 +130,8 @@ wifi환경에서만 다운로드하게 하는 기능 <br>
 
 <details>
 <summary>메인페이지</summary>
-    
+    ![화면 캡처 2025-06-15 182904](https://github.com/user-attachments/assets/f23cff59-8f83-47c0-9e3a-11d66663ef84)
+
 </details>
 
 
