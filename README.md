@@ -129,7 +129,7 @@ wifi환경에서만 다운로드하게 하는 기능 <br>
 
 
 <details>
-
+<summary>메인페이지</summary>
     
 </details>
 
