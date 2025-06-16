@@ -60,7 +60,7 @@
 
 
 ## 4. 페이지 기능
-* test
+* ![메인페이지](https://github.com/user-attachments/assets/f23cff59-8f83-47c0-9e3a-11d66663ef84)
 
 
 ## 5. 핵심기능 및 UI디자인 코드 및 설명
@@ -89,7 +89,6 @@ code list
 
 
 ### 9. 마일스톤
-
 | 번호 | 마일스톤 이름       | 설명                                                  | 날짜   |
 | --- | ------------------- | ----------------------------------------------------- | -------- |
 | 1   | 프로젝트 계획 및 착수           | 프로젝트 계획                                         | 2025-05-19 |
@@ -104,8 +103,4 @@ code list
 
 
 ### 10. 간트차트 
-
 ![간트차트](https://github.com/user-attachments/assets/e438021e-116f-4802-bba3-11b455296a3d)
-
-
-![메인페이지](https://github.com/user-attachments/assets/f23cff59-8f83-47c0-9e3a-11d66663ef84)
