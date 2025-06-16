@@ -90,9 +90,10 @@ wifi환경에서만 다운로드하게 하는 기능 <br>
 <details>
     <summary>간트차트</summary>
 
-![간트차트](https://github.com/user-attachments/assets/bf2da737-0a97-4742-8cc3-ef547f670322)
+![간트차트](https://github.com/user-attachments/assets/e438021e-116f-4802-bba3-11b455296a3d)
 
 </details>
+
 
 <details>
     <summary>수정사항 및 참고사항</summary>
