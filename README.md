@@ -86,6 +86,8 @@
 <img src="https://github.com/user-attachments/assets/b18fe460-26de-4696-aa5c-ca89f0aa210a" width="200" style="margin-right: 20px;">
 <p>mp3파일을 휴대폰 내부에서 선택하여 곡의 제목 가수명 앨범이름을 기입하여 데이터 적용을 누르면 해당 mp3파일에 메타데이터가 적용됩니다. 이렇게 적용하고 나면, samsungmusic같은 뮤직플레이어에 반영됩니다.</p>
 
+## 시연영상
+
 
 </div>
 
