@@ -15,7 +15,7 @@
 * Vscode
 * AndroidStudio
 
-### [사용 패키지(라이브러리)]
+### [사용 패키지]
 * permission_handler: 앱에서 다양한 권한을 요청 및 상태를 확인
 
 * path_provider: 앱에서 플랫폼별 디렉토리 경로를 가져옴
