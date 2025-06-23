@@ -1,4 +1,4 @@
-# [앱 프로젝트] TubeTune :hand-pink-waving:
+# [앱 프로젝트] TubeTune 
 
 ## 프로젝트 소개 및 설명
 ### [프로젝트 설명 및 배경]
@@ -6,7 +6,7 @@
 * FLUTTER를 기반으로하는 안드로이드 앱 : 유튜브 영상을 음원파일로 저장하고, mp3 음원파일의 곡이름, 가수이름, 앨범명을 수정할 수 있는 앱
 <hr>
 
-## 1. 개발환경 및 사용 패키지
+## 1. <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Construction.png" alt="Construction" width="25" height="25" />개발환경 및 사용 패키지
 ### [사용기술]
 * Front-end : Dart
 * Framework : Flutter
