@@ -132,8 +132,8 @@ await for (final data in stream) {
 <code>
 final downloadDir = Directory('/storage/emulated/0/Download');
 final mp3Path = '${downloadDir.path}/$fileName';
-Android의 Download 디렉토리에 최종 MP3 파일을 저장합니다.
 </code>
+  Android의 Download 디렉토리에 최종 MP3 파일을 저장합니다.
   </pre>
 
 ### 2. 음원 편집
