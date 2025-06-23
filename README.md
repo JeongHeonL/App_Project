@@ -230,6 +230,7 @@ class Mainpage extends StatelessWidget {
               color: Colors.greenAccent,
               targetPage: editPage(),
       </code>
+  이러한 앱바와 애니메이션버튼을 구현함으로써 사용자가 더 재미있는 경험과 눌렀다는 경험을 인식하게 함으로써 더 나은 편의성을 제공
 </pre>
 </details>
     
