@@ -73,8 +73,13 @@
  * 음원파일 제목 가수 앨범이름 수정 기능
 
 ## 4. 화면구성 
-<img src="https://github.com/user-attachments/assets/f056be25-bc21-4719-9212-93bd5e120eeb" width="300"/>
-<p>이 앱은 유튜브에서 음악을 다운로드하고, MP3 메타데이터를 수정할 수 있는 앱입니다. 직관적인 UI와 빠른 변환 속도를 제공합니다.</p>
+<div style="display: flex; align-items: center;">
+  <img src="https://github.com/user-attachments/assets/f056be25-bc21-4719-9212-93bd5e120eeb" width="200" style="margin-right: 20px;" />
+  <div>
+    <p><strong>TubeTune</strong>은 유튜브 음악을 MP3로 변환하고, 메타데이터(제목, 가수, 앨범)를 수정할 수 있는 앱입니다.</p>
+    <p>사용자는 단 몇 번의 클릭만으로 썸네일, 가사, 앨범 표지를 포함한 음원 정보를 완성할 수 있습니다.</p>
+  </div>
+</div>
 
 
 
