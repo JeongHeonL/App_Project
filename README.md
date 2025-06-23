@@ -6,7 +6,7 @@
 * FLUTTER를 기반으로하는 안드로이드 앱 : 유튜브 영상을 음원파일로 저장하고, mp3 음원파일의 곡이름, 가수이름, 앨범명을 수정할 수 있는 앱
 <hr>
 
-## 1. <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Construction.png" alt="Construction" width="25" height="25" />개발환경 및 사용 패키지
+## 1. <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Screwdriver.png" alt="Screwdriver" width="25" height="25" /> 개발환경 및 사용 패키지
 ### [사용기술]
 * Front-end : Dart
 * Framework : Flutter
@@ -81,7 +81,7 @@
 
 
 
-## 3. 목표
+## 3.<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Chequered%20Flag.png" alt="Chequered Flag" width="25" height="25" /> 목표
 ### [UI/UX 및 프론트 목표]
 * 최대한 간결하고 직관적으로 디자인 할 것
 * 사용자가 적은횟수의 행동으로 변환 및 다운로드가 가능하게 할 것 
@@ -92,7 +92,7 @@
 * 음원파일로 변환시, 해당 유튜브 URL의 썸네일이 나오게 하기
 
 
-## 4. 핵심기능
+## 4.<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Check%20Mark%20Button.png" alt="Check Mark Button" width="25" height="25" /> 핵심기능
 ### 변환기능
  * 유튜브 URL 음원 변환 기능
  * 음원파일 편집 기능
@@ -101,7 +101,7 @@
  * 다운로드바
  * 다운로드시 해당 음원의 썸네일을 보여주게하는 기능
 
-## 5. 화면구성 
+## 5.<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/White%20Square%20Button.png" alt="White Square Button" width="25" height="25" /> 화면구성 
 ### 1. 메인화면
 <div style="display: flex; align-items: center;">
   <img src="https://github.com/user-attachments/assets/f056be25-bc21-4719-9212-93bd5e120eeb" width="200" style="margin-right: 20px;" />
@@ -117,11 +117,11 @@
 
 </div>
 
-## 6. 시연영상
+## 6.<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Television.png" alt="Television" width="25" height="25" /> 시연영상
 <img width="80%" src="https://github.com/user-attachments/assets/89bb2d1e-decb-4db4-b798-12a01b8890e5">
 
 
-## 7. 코드
+## 7.<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Page%20Facing%20Up.png" alt="Page Facing Up" width="25" height="25" /> 코드
 ### 1. 음원 다운로드 코드 
 #### 1. 음원 추출 코드 
 <details>
@@ -391,7 +391,7 @@ class _LyricsPageState extends State<editPage> {
 </pre>
 </details>
 
-## 8. 향후 확장 계획
+## 8.<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Triangular%20Flag.png" alt="Triangular Flag" width="25" height="25" /> 향후 확장 계획
 다운로드기록 기능 <br>
 가사 기입 및 수정 기능 <br>
 앨범 표지 기입 기능 <br>
@@ -399,12 +399,12 @@ class _LyricsPageState extends State<editPage> {
 WIFI환경에서만 다운로드 기능 <br>
 다운로드 시 알림 기능 <br> 
 
-## 9. 시행착오 극복
+## 9.<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Check%20Mark%20Button.png" alt="Check Mark Button" width="25" height="25" /> 시행착오 극복
 
 FFmpegKit을 사용해 데이터를 삽입했지만 파일이 실제로 저장되지 않거나, 제목 변경 후 음악이 재생되지 않는 문제가 발생 <br>
 출력 파일명을 제목 기반으로 변경하고, 저장 경로를 사용자의 기기의 Download 폴더로 명확히 지정해 정상 저장 및 인식되도록 개선함.
 
-## 10. 느낀점
+## 10.<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Light%20Bulb.png" alt="Light Bulb" width="25" height="25" /> 느낀점
 패키지가 오래된 것들이 많아서 직접 코드를 짜야하는 경우가 있거나, 패키지가 오래되서 호환이 안되는 코드들 때문에 계속 오류가 나고 변경해야될 점들이 많아서<br>
 프로젝트를 진행하는데 힘들었지만 구현되고나니까 좋았고 이걸로 다른 앱 깔 필요없이 내가 직접 쓸 수 있어서 더 좋은것 같다.
 
