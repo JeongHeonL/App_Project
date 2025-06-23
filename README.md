@@ -127,21 +127,17 @@
 <pre>
 <code>
 final video = await yt.videos.get(url); ← 주어진 유튜브 URL로부터 영상 정보를 불러옴
-final manifest = await yt.videos.streamsClient.getManifest(video.id); // 해당 영상의 스트림 목록(비디오/오디오) 메타데이터를 가져옴
-final audioStream = manifest.audioOnly.withHighestBitrate(); // 가장 비트레이트가 높은 오디오 스트림 선택 (최고 음질)
+final manifest = await yt.videos.streamsClient.getManifest(video.id); ← 해당 영상의 스트림 목록(비디오/오디오) 메타데이터를 가져옴
+final audioStream = manifest.audioOnly.withHighestBitrate(); ← 가장 비트레이트가 높은 오디오 스트림 선택 (최고 음질)
 </code>
   </pre>
-youtube_explode_dart를 사용해 유튜브 영상 정보 및 음원 스트림을 가져옴
-withHighestBitrate()를 통해 가장 음질이 좋은 오디오 스트림을 선택
-
 
 #### 2. 썸네일 표시 코드
 <pre>
 <code>
-setState(() => thumbnailUrl = video.thumbnails.highResUrl);
+setState(() => thumbnailUrl = video.thumbnails.highResUrl); ← 영상의 고해상도 썸네일 URL을 상태값으로 저장하여 UI에 표시, video 객체는 youtube_explode_dart 패키지에서 생성
   </code>
 </pre>
-video.thumbnails.highResUrl을 이용하여 유튜브 영상의 썸네일을 보여줌
 
 
 #### 3. 다운로드바 코드
@@ -152,21 +148,19 @@ await for (final data in stream) {
   tempSink.add(data);
   setState(() {
     _progress = downloaded / total;
-    status = '${(_progress! * 100).toStringAsFixed(1)}% 다운로드 중...';
+    status = '${(_progress! * 100).toStringAsFixed(1)}% 다운로드 중...'; ← 다운로드 진행률을 실시간으로 표시
   });
 }
 </code>
 </pre>
-오디오 스트림을 바이트 단위로 읽어 임시 파일로 저장.
-다운로드 진행률을 실시간으로 표시
 
 #### 4. 다운로드 디렉토리로 이동 
   <pre>
 <code>
-final downloadDir = Directory('/storage/emulated/0/Download');
-final mp3Path = '${downloadDir.path}/$fileName';
+final downloadDir = Directory('/storage/emulated/0/Download'); ← Android 내장 저장소의 Download 폴더 경로 정의
+final mp3Path = '${downloadDir.path}/$fileName';  ← 최종적으로 저장될 mp3파일 경로 생성 및 정의 
 </code>
-  Android의 Download 디렉토리에 최종 MP3 파일을 저장
+
   </pre>
 
 ### 2. 음원 편집
@@ -201,17 +195,17 @@ class Mainpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return myappbar(
-      title: "TubeTune", 
+      title: "TubeTune",  ← 커스텀 앱바 위젯 사용
       appBarColor: Colors.cyan,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            AnimatedButtonBox(
+            AnimatedButtonBox( ← 커스텀 애니메이션 버튼 위젯
               label: '유튜브 음원 다운로드',
               color: const Color(0xffc4302b),
-              targetPage: YoutubeConverter(),
+              targetPage: YoutubeConverter(), ← 클릭 시 이동할 페이지 함수
             ),
             AnimatedButtonBox(
               label: '음원파일 편집',
@@ -234,7 +228,7 @@ class YoutubeConverter extends StatelessWidget {
       title: '유튜브 음원 다운로드',
       appBarColor: Colors.redAccent,
       
-      body: const ConverterUI(
+      body: const ConverterUI( ← mp3로 변환해주는 코드 및 UI구현 dart 파일
         title: '유튜브 링크를 입력해주세요',
         hint: '예시 : https://www.youtube.com/watch?v=...',
         buttonColor1: Colors.redAccent,
