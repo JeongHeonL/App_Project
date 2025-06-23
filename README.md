@@ -16,13 +16,26 @@
 * AndroidStudio
 
 ### [사용 패키지(라이브러리)]
-* youtube_explode_dart :  YouTube API 키 없이 YouTube 영상, 재생 목록, 채널의 메타데이터(제목, 설명, 썸네일 등)를 가져오거나, 영상/음원 스트림의 URL을 얻어오는 기능을 제공합니다.
-* path_provider : 앱이 일반적으로 사용하는 파일 시스템 상의 경로를 얻어오는 기능을 제공합니다.
-* ffmpeg_kit_flutter , ffmpeg_kit_flutter_new: 멀티미디어 처리 도구인 FFmpeg 라이브러리를 플러터 앱에서 사용할 수 있게 해주는 패키지입니다. 영상 및 음원 파일의 변환, 인코딩, 디코딩, 편집 등 다양한 멀티미디어 작업을 수행할 수 있습니다.
-* permission_handler : 앱이 사용자의 기기 기능에 접근하기 위해 필요한 권한을 확인 및 제공합니다.
-* cupertino_icons : 애플의 iOS 디자인인 쿠퍼티노 스타일의 아이콘 폰트를 제공합니다.
-* flutter_youtube_downloader : 유튜브 영상의 URL을 받아 MP4 또는 MP3 파일로 직접 다운로드하는 기능을 제공하는 패키지입니다.
-* dio : mp3,mp4 등으로 다운로드 할 수 있게 해주는 패키지입니다.
+* permission_handler: 앱에서 위치, 카메라, 마이크 등 다양한 권한을 요청하고 상태를 확인할 수 있음.
+
+* path_provider: 앱에서 문서, 캐시 등 플랫폼별 디렉토리 경로를 가져올 수 있음.
+
+* dio: 강력하고 유연한 HTTP 클라이언트로, 네트워크 요청 및 응답 처리를 지원함.
+
+* cupertino_icons: iOS 스타일의 아이콘 세트를 제공하는 패키지.
+
+* youtube_explode_dart: YouTube 영상, 오디오, 메타데이터 등을 추출할 수 있음.
+
+* device_info_plus: 디바이스의 하드웨어 및 소프트웨어 정보를 가져올 수 있음.
+
+* ffmpeg_kit_flutter_new: FFmpeg를 통해 오디오/비디오 처리 및 변환 기능을 제공함.
+
+* audio_metadata_reader: 오디오 파일의 제목, 아티스트, 앨범 등의 메타데이터를 읽을 수 있음.
+
+* file_picker: 파일 탐색기를 열어 사용자가 파일을 선택할 수 있게 함.
+
+* image_picker: 갤러리 또는 카메라에서 이미지를 선택하거나 촬영할 수 있게 함.
+
 
 ## 📋 요구사항정의서
 
