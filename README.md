@@ -16,25 +16,25 @@
 * AndroidStudio
 
 ### [사용 패키지(라이브러리)]
-* permission_handler: 앱에서 위치, 카메라, 마이크 등 다양한 권한을 요청하고 상태를 확인할 수 있음.
+* permission_handler: 앱에서 다양한 권한을 요청 및 상태를 확인
 
-* path_provider: 앱에서 문서, 캐시 등 플랫폼별 디렉토리 경로를 가져올 수 있음.
+* path_provider: 앱에서 플랫폼별 디렉토리 경로를 가져옴
 
-* dio: 강력하고 유연한 HTTP 클라이언트로, 네트워크 요청 및 응답 처리를 지원함.
+* dio: HTTP 클라이언트로, 네트워크 요청 및 응답 처리를 지원
 
-* cupertino_icons: iOS 스타일의 아이콘 세트를 제공하는 패키지.
+* cupertino_icons: iOS 스타일의 아이콘을 제공
 
-* youtube_explode_dart: YouTube 영상, 오디오, 메타데이터 등을 추출할 수 있음.
+* youtube_explode_dart: YouTube의  영상, 오디오 등의 데이터를 추출
 
-* device_info_plus: 디바이스의 하드웨어 및 소프트웨어 정보를 가져올 수 있음.
+* device_info_plus: 디바이스의 하드웨어 및 소프트웨어 정보를 가져옴
 
-* ffmpeg_kit_flutter_new: FFmpeg를 통해 오디오/비디오 처리 및 변환 기능을 제공함.
+* ffmpeg_kit_flutter_new: FFmpeg를 통해 오디오/비디오 처리 및 변환 기능
 
-* audio_metadata_reader: 오디오 파일의 제목, 아티스트, 앨범 등의 메타데이터를 읽을 수 있음.
+* audio_metadata_reader: 오디오(mp3) 파일의 제목, 아티스트, 앨범 등의 메타데이터 읽기
 
-* file_picker: 파일 탐색기를 열어 사용자가 파일을 선택할 수 있게 함.
+* file_picker: 파일 탐색기를 열어 사용자가 파일을 선택하게 함
 
-* image_picker: 갤러리 또는 카메라에서 이미지를 선택하거나 촬영할 수 있게 함.
+* image_picker: 갤러리 또는 카메라에서 이미지를 선택
 
 
 ## 📋 요구사항정의서
