@@ -123,7 +123,7 @@ await for (final data in stream) {
   });
 }
 </code>
-<pre>
+</pre>
 오디오 스트림을 바이트 단위로 읽어 임시 파일로 저장.
 다운로드 진행률을 실시간으로 표시 (LinearProgressIndicator에 반영).
 
