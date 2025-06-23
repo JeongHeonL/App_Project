@@ -89,13 +89,245 @@
 
 </div>
 
+## 5. 코드
+### 1. 음원 다운로드 코드 
+#### 1. 음원 추출 코드 
+final video = await yt.videos.get(url);
+final manifest = await yt.videos.streamsClient.getManifest(video.id);
+final audioStream = manifest.audioOnly.withHighestBitrate();
+youtube_explode_dart를 사용해 유튜브 영상 정보 및 음원 스트림을 가져옵니다.
+withHighestBitrate()를 통해 가장 음질이 좋은 오디오 스트림을 선택합니다.
+
+#### 2. 썸네일 표시 코드 
+setState(() => thumbnailUrl = video.thumbnails.highResUrl);
+video.thumbnails.highResUrl을 이용하여 유튜브 영상의 고해상도 썸네일을 보여줍니다
+
+int downloaded = 0;
+final total = audioStream.size.totalBytes;
+
+#### 3. 다운로드바 코드
+
+await for (final data in stream) {
+  downloaded += data.length;
+  tempSink.add(data);
+  setState(() {
+    _progress = downloaded / total;
+    status = '${(_progress! * 100).toStringAsFixed(1)}% 다운로드 중...';
+  });
+}
+오디오 스트림을 바이트 단위로 읽어 임시 파일로 저장.
+다운로드 진행률을 실시간으로 표시 (LinearProgressIndicator에 반영).
+
+#### 4. 다운로드 디렉토리로 이동 
+final downloadDir = Directory('/storage/emulated/0/Download');
+final mp3Path = '${downloadDir.path}/$fileName';
+Android의 Download 디렉토리에 최종 MP3 파일을 저장합니다.
+
+### 2. 음원 편집
+#### 데이터 삽입 코드 
+final command = [
+  '-i',
+  '"$originalPath"',
+  '-c',
+  'copy',
+  '-metadata',
+  'title=$title',
+  '-metadata',
+  'artist=$artist',
+  '-metadata',
+  'album=$album',
+  '-metadata',
+  'lyrics=$lyrics',
+  '-id3v2_version',
+  '3',
+  '"$outputPath"'
+].join(' ');
+기존 음원 파일을 재인코딩 없이(-c copy) 메타데이터만 삽입하는 형태로 합니다.
+
+### 3. 메인페이지 코드 
+import 'package:flutter/material.dart';
+import '../bar/AnimatedButtonBox.dart';
+import 'package:converter_app/Page/youtubeconverter_page.dart';
+import '../bar/appbar.dart';
+import 'edit_page.dart';
 
 
+class Mainpage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return myappbar(
+      title: "TubeTune", 
+      appBarColor: Colors.cyan,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            AnimatedButtonBox(
+              label: '유튜브 음원 다운로드',
+              color: const Color(0xffc4302b),
+              targetPage: YoutubeConverter(),
+            ),
+            AnimatedButtonBox(
+              label: '음원파일 편집',
+              color: Colors.greenAccent,
+              targetPage: editPage(),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
 
-## 5. 핵심기능 및 UI디자인 코드 및 설명
+### 4. 음원다운로드 페이지 코드
+import 'package:flutter/material.dart';
+import '../service/Converter_UI.dart';
+import '../bar/appbar.dart';
 
+class YoutubeConverter extends StatelessWidget {
+  const YoutubeConverter({super.key});
 
+  @override
+  Widget build(BuildContext context) {
+    return myappbar(
+      title: '유튜브 음원 다운로드',
+      appBarColor: Colors.redAccent,
+      
+      body: const ConverterUI(
+        title: '유튜브 링크를 입력해주세요',
+        hint: '예시 : https://www.youtube.com/watch?v=...',
+        buttonColor1: Colors.redAccent,
+        buttonText1: 'MP3로 다운로드',
+      ),
+    );
+  }
+}
 
+### 5. 음원편집 페이지 코드
+import 'dart:io';
+import 'package:flutter/material.dart';
+import 'package:file_picker/file_picker.dart';
+import '../service/edit.dart'; // 실제 경로로 수정 필요
+import '../bar/appbar.dart'; // MyAppBar 위젯 경로
+
+class editPage extends StatefulWidget {
+  const editPage({super.key});
+
+  @override
+  State<editPage> createState() => _LyricsPageState();
+}
+
+class _LyricsPageState extends State<editPage> {
+  File? selectedFile;
+  final titleController = TextEditingController();
+  final artistController = TextEditingController();
+  final albumController = TextEditingController();
+
+  String status = '데이터를 삽입할 MP3 파일을 선택하세요.';
+
+  Future<void> pickMp3File() async {
+    final result = await FilePicker.platform.pickFiles(type: FileType.audio);
+    if (result != null && result.files.single.path != null) {
+      setState(() {
+        selectedFile = File(result.files.single.path!);
+        status = ' 파일 선택되었습니다.: ${selectedFile!.path.split('/').last}';
+      });
+    }
+  }
+
+  Future<void> applyMetadata() async {
+    if (selectedFile == null) {
+      setState(() => status = ' 먼저 MP3 파일을 선택하세요.');
+      return;
+    }
+
+    setState(() => status = '데이터를 삽입중입니다! 잠시만 기다려주세요...');
+
+    final editor = LyricsEditor();
+    final result = await editor.applyMetadata(
+      mp3File: selectedFile!,
+      title: titleController.text.trim(),
+      artist: artistController.text.trim(),
+      album: albumController.text.trim(),
+      lyrics: '',
+    );
+
+    setState(() => status = result);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return myappbar(
+      title: '음원파일 편집',
+      appBarColor: Colors.cyan,
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: ListView(
+          children: [
+            ElevatedButton(
+              onPressed: pickMp3File,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.orange,
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                textStyle: const TextStyle(fontSize: 16),
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text('MP3 파일 선택'),
+            ),
+            const SizedBox(height: 16),
+            TextField(
+              controller: titleController,
+              decoration: const InputDecoration(
+                labelText: '제목 (Title)',
+                border: OutlineInputBorder(),
+              ),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: artistController,
+              decoration: const InputDecoration(
+                labelText: '가수명 (Artist)',
+                border: OutlineInputBorder(),
+              ),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: albumController,
+              decoration: const InputDecoration(
+                labelText: '앨범이름 (Album)',
+                border: OutlineInputBorder(),
+              ),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: applyMetadata,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.green,
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                textStyle: const TextStyle(fontSize: 16),
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+              ),
+              child: const Text('데이터 적용'),
+            ),
+            const SizedBox(height: 24),
+            Text(
+              status,
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontSize: 14),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
 
 
 ## 6. 향후 확장 계획
