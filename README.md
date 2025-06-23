@@ -368,9 +368,10 @@ class _LyricsPageState extends State<editPage> {
     );
   }
 }
-</details>
+
 </code>
 </pre>
+</details>
 
 ## 8. 향후 확장 계획
 다운로드기록 기능 <br>
