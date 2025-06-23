@@ -94,21 +94,29 @@
 ## 5. 코드
 ### 1. 음원 다운로드 코드 
 #### 1. 음원 추출 코드 
+<pre>
+<code>
 final video = await yt.videos.get(url);
 final manifest = await yt.videos.streamsClient.getManifest(video.id);
 final audioStream = manifest.audioOnly.withHighestBitrate();
+</code>
+  </pre>
 youtube_explode_dart를 사용해 유튜브 영상 정보 및 음원 스트림을 가져옵니다.
 withHighestBitrate()를 통해 가장 음질이 좋은 오디오 스트림을 선택합니다.
 
-#### 2. 썸네일 표시 코드 
+
+#### 2. 썸네일 표시 코드
+<pre>
+<code>
 setState(() => thumbnailUrl = video.thumbnails.highResUrl);
 video.thumbnails.highResUrl을 이용하여 유튜브 영상의 고해상도 썸네일을 보여줍니다
-
-int downloaded = 0;
-final total = audioStream.size.totalBytes;
+  </code>
+</pre>
 
 #### 3. 다운로드바 코드
 
+<pre>
+<code>
 await for (final data in stream) {
   downloaded += data.length;
   tempSink.add(data);
@@ -117,6 +125,8 @@ await for (final data in stream) {
     status = '${(_progress! * 100).toStringAsFixed(1)}% 다운로드 중...';
   });
 }
+</code>
+<pre>
 오디오 스트림을 바이트 단위로 읽어 임시 파일로 저장.
 다운로드 진행률을 실시간으로 표시 (LinearProgressIndicator에 반영).
 
@@ -209,6 +219,7 @@ class YoutubeConverter extends StatelessWidget {
 }
 
 ### 5. 음원편집 페이지 코드
+<pre>
 <code>
 
 class editPage extends StatefulWidget {
@@ -329,7 +340,7 @@ class _LyricsPageState extends State<editPage> {
   }
 }
 </code>
-
+</pre>
 
 ## 6. 향후 확장 계획
 다운로드기록 기능 
