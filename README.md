@@ -395,9 +395,10 @@ class _LyricsPageState extends State<editPage> {
 다운로드기록 기능 <br>
 가사 기입 및 수정 기능 <br>
 앨범 표지 기입 기능 <br>
-유튜브 영상 다운로드 기능 <br>
+유튜브 영상 비디오(.mp4)다운로드 기능 <br>
 WIFI환경에서만 다운로드 기능 <br>
 다운로드 시 알림 기능 <br> 
+이러한 기능들을 추가하여 더 많은 사용자의 흥미를 끌게하고, 이용을 편리하게 함
 
 ## 9.<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Check%20Mark%20Button.png" alt="Check Mark Button" width="25" height="25" /> 시행착오 극복
 
