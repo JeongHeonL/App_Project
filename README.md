@@ -73,7 +73,8 @@
  * 음원파일 제목 가수 앨범이름 수정 기능
 
 ## 4. 화면구성 
-* ![메인페이지](https://github.com/user-attachments/assets/f056be25-bc21-4719-9212-93bd5e120eeb width="50%")
+<img src="https://github.com/user-attachments/assets/f056be25-bc21-4719-9212-93bd5e120eeb" width="300"/>
+
 
 
 ## 5. 핵심기능 및 UI디자인 코드 및 설명
