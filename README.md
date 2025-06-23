@@ -106,12 +106,12 @@ withHighestBitrate()를 통해 가장 음질이 좋은 오디오 스트림을 �
 <pre>
 <code>
 setState(() => thumbnailUrl = video.thumbnails.highResUrl);
-video.thumbnails.highResUrl을 이용하여 유튜브 영상의 고해상도 썸네일을 보여줍니다
   </code>
 </pre>
+video.thumbnails.highResUrl을 이용하여 유튜브 영상의 고해상도 썸네일을 보여줍니다
+
 
 #### 3. 다운로드바 코드
-
 <pre>
 <code>
 await for (final data in stream) {
