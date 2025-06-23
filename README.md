@@ -127,6 +127,7 @@ Android의 Download 디렉토리에 최종 MP3 파일을 저장합니다.
 
 ### 2. 음원 편집
 #### 데이터 삽입 코드 
+<code>
 final command = [
   '-i',
   '"$originalPath"',
@@ -144,6 +145,7 @@ final command = [
   '3',
   '"$outputPath"'
 ].join(' ');
+</code>
 기존 음원 파일을 재인코딩 없이(-c copy) 메타데이터만 삽입하는 형태로 합니다.
 
 ### 3. 메인페이지 코드 
@@ -207,11 +209,7 @@ class YoutubeConverter extends StatelessWidget {
 }
 
 ### 5. 음원편집 페이지 코드
-import 'dart:io';
-import 'package:flutter/material.dart';
-import 'package:file_picker/file_picker.dart';
-import '../service/edit.dart'; // 실제 경로로 수정 필요
-import '../bar/appbar.dart'; // MyAppBar 위젯 경로
+<code>
 
 class editPage extends StatefulWidget {
   const editPage({super.key});
@@ -330,6 +328,7 @@ class _LyricsPageState extends State<editPage> {
     );
   }
 }
+</code>
 
 
 ## 6. 향후 확장 계획
