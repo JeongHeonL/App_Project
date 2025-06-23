@@ -86,9 +86,6 @@
 <img src="https://github.com/user-attachments/assets/b18fe460-26de-4696-aa5c-ca89f0aa210a" width="200" style="margin-right: 20px;">
 <p>mp3파일을 휴대폰 내부에서 선택하여 곡의 제목 가수명 앨범이름을 기입하여 데이터 적용을 누르면 해당 mp3파일에 메타데이터가 적용됩니다. 이렇게 적용하고 나면, samsungmusic같은 뮤직플레이어에 반영됩니다.</p>
 
-## 시연영상
-
-
 </div>
 
 ## 5. 코드
@@ -131,12 +128,17 @@ await for (final data in stream) {
 다운로드 진행률을 실시간으로 표시 (LinearProgressIndicator에 반영).
 
 #### 4. 다운로드 디렉토리로 이동 
+  <pre>
+<code>
 final downloadDir = Directory('/storage/emulated/0/Download');
 final mp3Path = '${downloadDir.path}/$fileName';
 Android의 Download 디렉토리에 최종 MP3 파일을 저장합니다.
+</code>
+  </pre>
 
 ### 2. 음원 편집
 #### 데이터 삽입 코드 
+<pre>
 <code>
 final command = [
   '-i',
@@ -156,16 +158,12 @@ final command = [
   '"$outputPath"'
 ].join(' ');
 </code>
+</pre>
 기존 음원 파일을 재인코딩 없이(-c copy) 메타데이터만 삽입하는 형태로 합니다.
 
 ### 3. 메인페이지 코드 
-import 'package:flutter/material.dart';
-import '../bar/AnimatedButtonBox.dart';
-import 'package:converter_app/Page/youtubeconverter_page.dart';
-import '../bar/appbar.dart';
-import 'edit_page.dart';
-
-
+<pre>
+  <code>
 class Mainpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -186,18 +184,13 @@ class Mainpage extends StatelessWidget {
               label: '음원파일 편집',
               color: Colors.greenAccent,
               targetPage: editPage(),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
+      </code>
+</pre>
+    
 
 ### 4. 음원다운로드 페이지 코드
-import 'package:flutter/material.dart';
-import '../service/Converter_UI.dart';
-import '../bar/appbar.dart';
+<pre>
+<code>
 
 class YoutubeConverter extends StatelessWidget {
   const YoutubeConverter({super.key});
@@ -217,6 +210,8 @@ class YoutubeConverter extends StatelessWidget {
     );
   }
 }
+</code>
+</pre>
 
 ### 5. 음원편집 페이지 코드
 <pre>
