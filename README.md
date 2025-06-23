@@ -406,6 +406,6 @@ FFmpegKit을 사용해 데이터를 삽입했지만 파일이 실제로 저장�
 
 ## 10.<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Light%20Bulb.png" alt="Light Bulb" width="25" height="25" /> 느낀점
 패키지가 오래된 것들이 많아서 직접 코드를 짜야하는 경우가 있거나, 패키지가 오래되서 호환이 안되는 코드들 때문에 계속 오류가 나고 변경해야될 점들이 많아서<br>
-프로젝트를 진행하는데 힘들었지만 구현되고나니까 좋았고 이걸로 다른 앱 깔 필요없이 내가 직접 쓸 수 있어서 더 좋은것 같다.
+프로젝트를 진행하는데 힘들었지만 구현되고나니까 좋았고 flutter와 dart의 이해도, 프로젝트계획 및 장기계획, LLM을 활용한 다양한 DART패키지 정보를 얻을 수 있어서 좋았고 내가 직접 쓸 수 있어서 더 좋은것 같다.
 
 ##<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Clapping%20Hands%20Light%20Skin%20Tone.png" alt="Clapping Hands Light Skin Tone" width="25" height="25" /> Thank you
