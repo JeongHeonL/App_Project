@@ -361,4 +361,4 @@ WIFI환경에서만 다운로드 기능
 
 
 ### 10. 간트차트 
-![간트차트](https://github.com/user-attachments/assets/e438021e-116f-4802-bba3-11b455296a3d)
+![dd](https://github.com/user-attachments/assets/1677f4ee-b53a-4b46-a02c-e7ef429f5e61)
