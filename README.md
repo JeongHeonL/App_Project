@@ -117,11 +117,11 @@
 
 </div>
 
-## 7. 시연영상
+## 6. 시연영상
 <img width="80%" src="https://github.com/user-attachments/assets/89bb2d1e-decb-4db4-b798-12a01b8890e5">
 
 
-## 6. 코드
+## 7. 코드
 ### 1. 음원 다운로드 코드 
 #### 1. 음원 추출 코드 
 <pre>
@@ -370,7 +370,10 @@ class _LyricsPageState extends State<editPage> {
 </code>
 </pre>
 
-## 6. 향후 확장 계획
+## 8. 시행착오 
+
+
+## 8. 향후 확장 계획
 다운로드기록 기능 <br>
 가사 기입 및 수정 기능 <br>
 앨범 표지 기입 기능 <br>
