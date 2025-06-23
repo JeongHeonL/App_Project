@@ -247,6 +247,7 @@ class YoutubeConverter extends StatelessWidget {
 </pre>
 
 ### 5. 음원편집 페이지 코드
+<details>
 <pre>
 <code>
 
@@ -367,6 +368,7 @@ class _LyricsPageState extends State<editPage> {
     );
   }
 }
+</details>
 </code>
 </pre>
 
