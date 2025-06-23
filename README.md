@@ -124,6 +124,8 @@
 ## 7. 코드
 ### 1. 음원 다운로드 코드 
 #### 1. 음원 추출 코드 
+<details>
+      <summary>코드내용</summary>
 <pre>
 <code>
 final video = await yt.videos.get(url); ← 주어진 유튜브 URL로부터 영상 정보를 불러옴
@@ -131,16 +133,22 @@ final manifest = await yt.videos.streamsClient.getManifest(video.id); ← 해당
 final audioStream = manifest.audioOnly.withHighestBitrate(); ← 가장 비트레이트가 높은 오디오 스트림 선택 (최고 음질)
 </code>
   </pre>
+  </details>
 
 #### 2. 썸네일 표시 코드
+<details>
+      <summary>코드내용</summary>
 <pre>
 <code>
 setState(() => thumbnailUrl = video.thumbnails.highResUrl); ← 영상의 고해상도 썸네일 URL을 상태값으로 저장하여 UI에 표시, video 객체는 youtube_explode_dart 패키지에서 생성
   </code>
 </pre>
+</details>
 
 
 #### 3. 다운로드바 코드
+<details>
+      <summary>코드내용</summary>
 <pre>
 <code>
 await for (final data in stream) {
@@ -153,18 +161,23 @@ await for (final data in stream) {
 }
 </code>
 </pre>
+</details>
 
 #### 4. 다운로드 디렉토리로 이동 
+<details>
+      <summary>코드내용</summary>
   <pre>
 <code>
 final downloadDir = Directory('/storage/emulated/0/Download'); ← Android 내장 저장소의 Download 폴더 경로 정의
 final mp3Path = '${downloadDir.path}/$fileName';  ← 최종적으로 저장될 mp3파일 경로 생성 및 정의 
 </code>
-
   </pre>
+  </details>
 
 ### 2. 음원 편집
 #### 데이터 삽입 코드 
+<details>
+      <summary>코드내용</summary>
 <pre>
 <code>
 final command = [
@@ -187,8 +200,11 @@ final command = [
 </code>
 </pre>
 기존 음원 파일을 재인코딩 없이(-c copy) 메타데이터만 삽입하는 형태로 따로 저장
+</details>
 
 ### 3. 메인페이지 코드 
+<details>
+      <summary>코드내용</summary>
 <pre>
   <code>
 class Mainpage extends StatelessWidget {
@@ -213,9 +229,12 @@ class Mainpage extends StatelessWidget {
               targetPage: editPage(),
       </code>
 </pre>
+</details>
     
 
 ### 4. 음원다운로드 페이지 코드
+<details>
+      <summary>코드내용</summary>
 <pre>
 <code>
 
@@ -239,6 +258,7 @@ class YoutubeConverter extends StatelessWidget {
 }
 </code>
 </pre>
+</details>
 
 ### 5. 음원편집 페이지 코드
 <details>
