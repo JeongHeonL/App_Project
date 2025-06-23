@@ -73,9 +73,20 @@
  * 음원파일 제목 가수 앨범이름 수정 기능
 
 ## 4. 화면구성 
+### 1. 메인화면
 <div style="display: flex; align-items: center;">
   <img src="https://github.com/user-attachments/assets/f056be25-bc21-4719-9212-93bd5e120eeb" width="200" style="margin-right: 20px;" />
-  <p>이 앱은 유튜브에서 음악을 다운로드하고, MP3 메타데이터를 수정할 수 있는 앱입니다. 직관적인 UI와 빠른 변환 속도를 제공합니다.</p>
+  <p>적은 횟수의 터치로 빠르게 다운로드하게 하기 위해 두 개의 크기가 큰 버튼을 배치 하였고, 해당 버튼을 누르면 관련 페이지로 이동합니다.</p>
+
+### 2. 음원 다운로드 화면 
+<img src="https://github.com/user-attachments/assets/c50dd6ca-e4bf-416b-af6d-b5a2ce6fe446" width="200" style="margin-right: 20px;">
+<p>url을 입력하고 다운로드 버튼을 누르면 해당 영상 썸네일과 함게 휴대폰 내부 downloads 폴더에 mp3파일이 다운로드 됩니다.</p>
+
+### 3. 음원파일 편집 화면 
+<img src="https://github.com/user-attachments/assets/b18fe460-26de-4696-aa5c-ca89f0aa210a" width="200" style="margin-right: 20px;">
+<p>mp3파일을 휴대폰 내부에서 선택하여 곡의 제목 가수명 앨범이름을 기입하여 데이터 적용을 누르면 해당 mp3파일에 메타데이터가 적용됩니다. 이렇게 적용하고 나면, samsungmusic같은 뮤직플레이어에 반영됩니다.</p>
+
+
 </div>
 
 
