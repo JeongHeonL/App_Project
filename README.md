@@ -127,8 +127,11 @@
 <pre>
 <code>
 final video = await yt.videos.get(url);
+  // 주어진 유튜브 URL로부터 영상 정보를 불러옴
 final manifest = await yt.videos.streamsClient.getManifest(video.id);
+  // 해당 영상의 스트림 목록(비디오/오디오) 메타데이터를 가져옴
 final audioStream = manifest.audioOnly.withHighestBitrate();
+  // 가장 비트레이트가 높은 오디오 스트림 선택 (최고 음질)
 </code>
   </pre>
 youtube_explode_dart를 사용해 유튜브 영상 정보 및 음원 스트림을 가져옴
